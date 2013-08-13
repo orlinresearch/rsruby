@@ -145,7 +145,7 @@ void init_R(int argc, char **argv){
     setenv("R_HOME", RSRUBY_R_HOME, 0);
   }
   Rf_initEmbeddedR(sizeof(defaultArgv) / sizeof(defaultArgv[0]), defaultArgv);
-  R_Interactive = FALSE; //Remove crash menu (and other interactive R features)
+  //R_Interactive = FALSE; //Remove crash menu (and other interactive R features)
 }
              
 /* This method is for testing catching of segfaults */
