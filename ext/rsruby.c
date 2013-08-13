@@ -139,7 +139,7 @@ VALUE rr_init(VALUE self){
  */
 void init_R(int argc, char **argv){
 
-  char *defaultArgv[] = {"rsruby","-q","--vanilla"};
+  char *defaultArgv[] = {"rsruby","--verbose"};
 
   if (RSRUBY_R_HOME) {
     setenv("R_HOME", RSRUBY_R_HOME, 0);
